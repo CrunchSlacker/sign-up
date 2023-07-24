@@ -1,0 +1,63 @@
+:root {
+    --dark-font-color: white;
+    --light-font-color: black;
+}
+
+* {
+    font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+label, input {
+    display: block;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(202, 196, 173);
+}
+
+.img-container {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    bottom: 30%;
+}
+
+#hallway-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
+}
+
+.input-container form fieldset{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input-container input {
+    border-radius: 4px;
+}
+
+#submit-btn {
+    margin-top: 1rem;
+    border-radius: 8px;
+}
